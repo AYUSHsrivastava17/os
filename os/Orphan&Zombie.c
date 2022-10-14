@@ -6,7 +6,7 @@ int main()
 	// ZOMBIE PROCESS
 	int p =fork();
 	if(p!=0){
-	    printf("parent process exited\n");
+	    printf("parent process running %d\n",getpid());
 	    sleep(10);
 	}
 	else{
@@ -21,7 +21,7 @@ int main()
 	//}
 	//else{
 	//printf("Zombie process\n");
-	//printf("child procces is still running \n ");
+	//printf("child procces is still running %d \n ",getpid());
 	//}
 }
 	
